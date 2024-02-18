@@ -1,1 +1,102 @@
-body{display:flex;justify-content:center;align-items:center;height:100vh;margin:0}.container{display:flex;flex-direction:column;background-color:#8a2be2;width:360px;height:640px;border-radius:10px;padding:10px;box-shadow:1px 2px 3px rgba(0,0,0,0.39);text-align:center}.container-produtos{overflow:auto;max-height:640px;height:auto;background-color:#8a2be2}::-webkit-scrollbar{width:12px}::-webkit-scrollbar-track{background:#09f;border-radius:30px}::-webkit-scrollbar-thumb{background-color:blue;border-radius:30px;border:3px solid #09f}.listaDeCompras{background-color:#fff}label{display:inline-block;width:100px;text-align:right;margin-right:5px;margin-left:5px;font-size:bold;font-family:'Times New Roman',Times,serif}input{margin-top:5px;width:100%px;left:50px}button{padding:10px 20px;border:2px solid #06f;background-color:#09f;margin-top:5px;color:#fff;cursor:pointer;transition:all .3s ease;border-radius:9px;font-size:bold;font-family:Arial,Helvetica,sans-serif}.button:active{animation:cliqueAnimacao .5s}@keyframes cliqueAnimacao{0%{transform:scale(1)}50%{transform:scale(0.9)}100%{transform:scale(1)}}
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin:0
+  }
+  .container{
+    display:flex;
+    flex-direction:column;
+    background-color:#8a2be2;
+    width:360px;
+    height:640px;
+    border-radius:10px;
+    padding:10px;
+    box-shadow:1px 2px 3px rgba(0,0,0,0.39);
+    text-align:center
+  }
+  .container-produtos{
+    overflow:auto;
+    max-height:640px;
+    height:auto;
+    background-color:#8a2be2
+  }
+  ::-webkit-scrollbar{
+    width:12px
+  }
+  ::-webkit-scrollbar-track{
+    background:#09f;
+    border-radius:30px
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color:blue;
+    border-radius:30px;
+    border:3px solid #09f
+  }
+  .listaDeCompras{
+    background-color:#fff
+  }
+  label{
+    display:inline-block;
+    width:100px;
+    text-align:right;
+    margin-right:5px;
+    margin-left:5px;
+    font-size:bold;
+    font-family:'Times New Roman',Times,serif
+  }
+  input{
+    margin-top:5px;
+    width:100%px;
+    left:50px
+  }
+  button{
+    padding:10px 20px;
+    border:2px solid #06f;
+    background-color:#09f;
+    margin-top:5px;
+    color:#fff;
+    cursor:pointer;
+    transition:all .3s ease;
+    border-radius:9px;
+    font-size:bold;
+    font-family:Arial,Helvetica,sans-serif
+  }
+  .button:active{
+    animation:cliqueAnimacao .5s
+  }
+  @keyframes cliqueAnimacao{
+    0%{transform:scale(1)}
+    50%{transform:scale(0.9)}
+    100%{transform:scale(1)}
+  }
+  
+  /* Adicionei as seguintes media queries para ajustar o layout em telas menores */
+  
+  @media (max-width: 400px) {
+    /* Reduzi a largura do container para caber na tela */
+    .container {
+      width: 300px;
+    }
+    /* Reduzi o tamanho da fonte dos elementos */
+    label, button {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 300px) {
+    /* Reduzi ainda mais a largura do container */
+    .container {
+      width: 250px;
+    }
+    /* Reduzi o tamanho da fonte dos elementos */
+    label, button {
+      font-size: 0.6rem;
+    }
+    /* Reduzi a largura do label para evitar quebrar a linha */
+    label {
+      width: 80px;
+    }
+  }
+  
