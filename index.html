@@ -1,44 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
-  <title>Lista de Compras</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Lista de Compras: SISTEMA</title>
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <link rel="shortcut icon" href="./src/img/icon.png" type="image/x-icon">
 </head>
-<body>
-  
-  </div>
-  <div class="container">
-    <h1>Lista de Compras</h1>
-    <div>
-      <label for="item">Item:</label>
-      <input type="text" id="item" name="item">
-    </div>
-    <div>
-      <label for="preco">Preço:</label>
-      <input type="number" id="preco" name="preco" step="0.01" min="0">
-    </div>
-    <div>
-      <label for="quantidade">Quantidade:</label>
-      <input type="number" id="quantidade" name="quantidade" min="0" value="1">
-    </div>
-    <div>
-      <button type="button" onclick="adicionarItem()">Adicionar</button>
-    </div>
-    <div>
-      <strong>Total: R$ <span id="total">0.00</span></strong>
-    </div>
-    <h2>Produtos</h2>
-    <div class="container-produtos">
-      <ul id="listaDeCompras"></ul>
-      
-      <ul id="listaDeCompras"></ul>
-    </div>
-   
-  </div>
-  </div>
-</div>
-  <script src="scripts.js"></script>
-</body>
-</html>
 
+<body>
+  <div class="main">
+
+    <header>
+      <div class="container">
+        <h3>Sistema para Lista de Compras</h3>
+      </div>
+    </header>
+
+    <main>
+      <span style="color: gray;">v.01</span>
+      <div class="main-container">
+        <div class="card add-item">
+          <h2>Novo item</h2>
+
+          <div class="group">
+            <label for="item">Nome do item</label>
+            <input type="text" id="item" name="item">
+          </div>
+
+          <div class="group">
+            <label for="descricao">Descrição</label>
+            <textarea name="descricao" id="descricao"></textarea>
+          </div>
+
+
+          <div class="group">
+            <label for="preco">Preço</label>
+            <input type="number" id="preco" name="preco" step="0.01" min="0">
+          </div>
+
+          <div class="group">
+            <label for="quantidade">Quantidade</label>
+            <input type="number" id="quantidade" name="quantidade" min="0" value="1">
+          </div>
+
+          <div class="group">
+            <button type="button" onclick="adicionarItem()">Adicionar</button>
+          </div>
+        </div>
+
+        <div class="card list-item">
+          <div id="list-controls">
+            <h3>Itens</h3>
+          </div>
+          <div class="container-itens">
+            <ul id="lista-compras"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <strong style="color: green;">Total: R$ <span id="total">0.00</span></strong>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <a href="https://www.flaticon.com/br/icones-gratis/lista-de-precos" title="lista de preços ícones">Lista de preços ícones criados por Freepik - Flaticon</a>      </div>
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="./src/js/scripts.js"></script>
+</body>
+
+</html>

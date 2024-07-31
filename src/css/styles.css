@@ -1,0 +1,184 @@
+/*
+* ajustes globais da pagina
+*/
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+* configuracoes principais do corpo da pagina
+*/
+body {
+  background-color: rgb(206, 206, 206);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+* configuracoes para o header da pagina
+*/
+header {
+  position: fixed;
+  background-color: rgb(26, 25, 25);
+  color: rgb(253, 253, 253);
+  width: 100%;
+  padding: 4px;
+  border-bottom: 4px solid orange;
+  z-index: 9999;
+}
+
+/*
+* ajustes para o conteudo principal (todo conteudo desconsiderando o header)
+*/
+main {
+  margin-top: 86px;
+  max-width: 1200px;
+  min-height: auto;
+  max-height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 90px;
+}
+
+footer {
+  background-color: rgb(26, 25, 25);
+  padding: 32px;
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
+/*
+* div que faz divisao entre o titulo e o container de itens
+*/
+#list-controls {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+
+/*
+* aplica configurações de container para o header
+*/
+.container {
+  padding: 10px 50px;
+}
+
+/*
+* engloba tanto a div referente a inclusao de item quanto a lista de compras
+*/
+.main-container {
+  display: flex;
+  gap: 32px ;
+}
+
+/*
+* template para as 3 divs principais
+*/
+.card {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffffff;
+  height: auto;
+  border-radius: 10px;
+  padding: 18px;
+  transition: all .3s ease;
+}
+.card:hover {
+  scale: 1.005;
+  transition: all .3s ease;
+}
+
+/*
+* referente ao card para inclusao de item
+*/
+.add-item {
+  width: 20%;
+}
+
+/*
+* referente ao container que suporta a lista de produtos
+*/
+.container-itens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  border-radius: 10px;
+  background-color: #ffffff
+}
+
+/*
+* container para agrupamento dos labels e inputs
+*/
+.group {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+}
+
+/*
+* configuracoes de flexibilidade para a lista
+*/
+ul {
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+* ajustes referentes aos itens da lista
+*/
+#lista-compras li  {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 8px;
+  gap: 12px;
+}
+
+/*
+* ajustes para botões
+*/
+button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #09f;
+  color: #fff;
+  cursor: pointer;
+  transition: all .3s ease;
+  border-radius: 4px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif
+}
+button:hover {
+  scale: 1.005;
+  transition: all .3s ease;
+}
+
+/*
+* ajustes para inputs e textarea para textos maiores
+*/
+input, textarea {
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 6px;
+  text-align: center;
+}
+
+/*
+* ajustes para os labels
+*/
+label {
+  color: rgb(66, 66, 66);
+}
